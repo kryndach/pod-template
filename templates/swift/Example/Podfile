@@ -1,7 +1,13 @@
+source 'https://github.com/CocoaPods/Specs'
+
+platform :ios, '8.0'
 use_frameworks!
+inhibit_all_warnings!
 
 target '${POD_NAME}_Example' do
   pod '${POD_NAME}', :path => '../'
+
+  pod 'SwiftLint'
 
   target '${POD_NAME}_Tests' do
     inherit! :search_paths
